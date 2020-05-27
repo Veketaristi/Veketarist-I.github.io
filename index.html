@@ -54,5 +54,110 @@
                 gamesx.style.display = "block";
             }
         </script>
-    </body>
-</html>
+        <style>
+            * {
+                padding: 0px;
+                margin: 0px;
+                overflow: hidden;
+            }
+            body {
+                display: flex;
+            }
+            ul {
+                list-style: none;
+            }
+            nav {
+                width: 30vw;
+                height: 100vh;
+                background-color: #272727;
+                color: #ffffff;
+                margin: 0px;
+            }
+            li {
+                text-align: center;
+                padding-top: 5vh;
+                padding-bottom: 5vh;
+                border-bottom: 5px solid #00abff;
+                transition: 0.5s;
+                cursor: default;
+            }
+            li:hover {
+                background-color: #00abff;
+                border-bottom: 5px solid #ffffff;
+            }
+            #veke {
+                text-align: center;
+                padding-top: 5vh;
+                padding-bottom: 5vh;
+                border-bottom: 5px solid #00abff;
+            }
+            #veke a {
+                color: #00abff;
+            }
+            #homeCont {
+                width: 70vw;
+                height: 100vh;
+                background-color: #373737;
+                text-align: center;
+                color: #ffffff;
+                margin: 0px;
+            }
+            #homeH {
+                background-color: #373737;
+                animation-name: homp;
+                animation-duration: 1s;
+                letter-spacing: 2px;
+            }
+            #homeH2 {
+                color: #00abff;
+            }
+            #centDiv {
+                margin-top: 30vh;
+            }
+            @keyframes homp {
+                0% {
+                    margin-bottom: -25px;
+                    opacity: 0;
+                    letter-spacing:0px;
+                }
+                50% {
+                    opacity: 0.3;
+                }
+                100% {
+                    margin-bottom: 0px;
+                    opacity: 1;
+                    letter-spacing: 2px;
+                }
+            }
+            .games {
+                background-color: #00abff;
+                border-bottom: 3px solid #00cdff;
+                color: #ffffff;
+                width: 70vw;
+                text-align: center;
+                padding-top: 3vh;
+                padding-bottom: 3vh;
+            }
+            .games a {
+                color: #ffffff;
+            }
+            #gamesCont {
+                background-color: #373737;
+                margin: 0px;
+            }
+            #channelCont {
+                width: 70vw;
+                height: 100vh;
+                background-color: #373737;
+                color: #ffffff;
+                text-align: center;
+                margin: 0px;
+            }
+            #channelCont h4 {
+                padding-top: 5vh;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+            }
+                    </style>
+                </body>
+            </html>
