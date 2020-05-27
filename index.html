@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+    </head>
+    <body>
+        <nav id="navbar">
+            <div id="veke">
+                <h4><a target="_blank" href="https://m.youtube.com/channel/UCGzup4Wgn_q_AuKli6d9meA">Veketarist I</a></h4>
+            </div>
+            <ul>
+                <li onclick="home();">Home</li>
+                <li onclick="games();">Games</li>
+                <li onclick="channel();">Youtube</li>
+            </ul>
+        </nav>
+        <div id="homeCont">
+            <div id="centDiv">
+                <h1 id="homeH">Welcome to</h1>
+                <h2 id="homeH2">Veketarist I's website</h2>
+            </div>
+        </div>
+        <div id="gamesCont">
+            <div class="games"><a target="_blank" href="https://scratch.mit.edu/projects/287617259/">Evader Ball (for mobile and PC)</a></div>
+            <div class="games"><a target="_blank" href="https://scratch.mit.edu/projects/283303055/">Sity Cimulator (for PC)</a></div>
+            <div class="games"><a target="_blank" href="https://scratch.mit.edu/projects/308279475/">Cyber Invasion (for PC)</a></div>
+            <div class="games"><a target="_blank" href="https://scratch.mit.edu/projects/325892582/">GrapplEz (for mobile and PC)</a></div>
+            <div class="games"><a target="_blank" href="https://scratch.mit.edu/projects/303178673/">Scrollax (for PC)</a></div>
+            <div class="games"><a href="https://scratch.mit.edu/projects/333512968/">Bonkers Bunker (for PC)</a></div>
+        </div>
+        <div id="channelCont">
+            <h4>I have a really versatile Youtube-channel. I make videos of Minecraft, Fortnite, Plants vs Zombies Garden Warfare 2, Zombsroyale.io, World of Tanks, Fields of Battle, Tanki Online, piano playing and programming. It would be really nice if you subscribed to my channel from the link in the top-left part of the screen. Thank you!</h4>
+        </div>
+        <script>
+            var homex = document.getElementById("homeCont");
+            var channelx = document.getElementById("channelCont");
+            var gamesx = document.getElementById("gamesCont");
+            gamesx.style.display = "none";
+            channelx.style.display = "none";
+            function home () {
+                homex.style.display = "block";
+                channelx.style.display = "none";
+                gamesx.style.display = "none";
+            }
+            function channel () {
+                homex.style.display = "none";
+                channelx.style.display = "block";
+                gamesx.style.display = "none";
+            }
+            function games () {
+                homex.style.display = "none";
+                channelx.style.display = "none";
+                gamesx.style.display = "block";
+            }
+        </script>
+    </body>
+</html>
